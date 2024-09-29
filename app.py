@@ -20,8 +20,8 @@ st.markdown("""
 
     /* Main title styling */
     .main-title-container {
-        font-size: 3rem;  /* Use rem units for better responsiveness */
-        font-weight: 700;
+        font-size: 1.4rem;  /* Use rem units for better responsiveness */
+        font-weight: 500;
         color: #4A235A;
         background: #F6F0FB;  /* Purple background for contrast */
         padding: 10px 3%;
@@ -35,16 +35,17 @@ st.markdown("""
 
     /* Adjusted header inside the input container */
     .input-header {
-        font-size: 1.8rem;  /* Use rem units for better scaling */
+        font-size: 1.5rem;  /* Use rem units for better scaling */
         font-weight: 500;
         color: #4A235A;
         background: #F6F0FB;  /* Purple background for contrast */
-        padding: 10px 5%;
+        padding: 10px 0px;  /* Set horizontal padding to 0 */
+        margin-left: 0;  /* Remove any left margin */
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Slight shadow */
-        width: auto;  /* Adjust the width automatically */
-        margin-bottom: 10px;
+        width: 100%;  /* Use 100% width to span full container */
         text-align: left;  /* Align text to the left */
+        margin-bottom: 10px;
     }
 
     /* Customize input labels */
@@ -72,11 +73,12 @@ st.markdown("""
     @media (max-width: 768px) {
         .input-header {
             font-size: 1.5rem;  /* Decrease font size on smaller screens */
-            padding: 8px 5%;  /* Adjust padding to fit narrower screens */
+            padding: 8px 0px;  /* Adjust padding to fit narrower screens */
+            margin-left: 0;  /* Ensure it starts from the left */
         }
         .main-title-container {
             font-size: 2.5rem;  /* Decrease title size */
-            text-align: left;  /* Align text to the left */
+            text-align: center;  /* Center title text */
         }
         .stDateInput > label, .stSelectbox > label {
             font-size: 1.2rem;  /* Decrease label size */
@@ -87,11 +89,11 @@ st.markdown("""
     @media (max-width: 480px) {
         .input-header {
             font-size: 1.2rem;  /* Further decrease font size */
-            padding: 8px 10%;  /* Increase padding for readability */
+            padding: 8px 0px;  /* Increase padding for readability */
         }
         .main-title-container {
             font-size: 2rem;  /* Further decrease title size */
-            text-align: left;  /* Align text to the left */
+            text-align: center;
         }
         .stDateInput > label, .stSelectbox > label {
             font-size: 1rem;  /* Decrease label size on mobile */
@@ -101,7 +103,7 @@ st.markdown("""
     /* Styling for the prediction result */
     .prediction-text {
         font-size: 1.5rem;
-        font-weight: 700;
+        font-weight: 500;
         color: #4A235A;
         text-align: left;  /* Align prediction result to the left */
         background-color: #F6F0FB;
@@ -132,7 +134,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.markdown('<div class="main-title-container">Weekly Units Forecast</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title-container">Weekly Units Forecast📊</div>', unsafe_allow_html=True)
 
 # Center the image using Streamlit's columns
 col1, col2, col3 = st.columns([1, 2, 1])
