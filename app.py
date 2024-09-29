@@ -132,7 +132,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.markdown('<div class="main-title-container">Weekly Units Forecast📊</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title-container">Weekly Units Forecast</div>', unsafe_allow_html=True)
 
 # Center the image using Streamlit's columns
 col1, col2, col3 = st.columns([1, 2, 1])
