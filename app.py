@@ -20,7 +20,7 @@ st.markdown("""
 
     /* Main title styling */
     .main-title-container {
-        font-size: 1.4rem;  /* Use rem units for better responsiveness */
+        font-size: 2.4rem;  /* Use rem units for better responsiveness */
         font-weight: 500;
         color: #4A235A;
         background: #F6F0FB;  /* Purple background for contrast */
