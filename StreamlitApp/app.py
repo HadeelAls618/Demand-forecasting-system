@@ -170,10 +170,11 @@ predict_button = st.button('Predict Units📈 ')
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Load the trained model
-with open('model.pkl', 'rb') as pickle_in:
+with open('StreamlitApp/model.pkl', 'rb') as pickle_in:
     model_xgb = pickle.load(pickle_in)
+    
 # Load data
-weekly_data = pd.read_pickle('data.pkl')
+weekly_data = pd.read_pickle('StreamlitApp/data.pkl')
 # Map subcategory name to numerical code
 subcategory_code = subcategory_mapping[subcategory_input]
 # Perform the prediction when the "Predict" button is clicked
