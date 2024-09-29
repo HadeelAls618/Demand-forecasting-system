@@ -139,7 +139,7 @@ st.markdown('<div class="main-title-container">Weekly Units Forecast📊</div>',
 # Center the image using Streamlit's columns
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image('Demand_Forecasting2.png', use_column_width=True, width=600)
+    st.image('StreamlitApp/Demand_Forecasting2.png', use_column_width=True, width=600)
 
 st.markdown('<div class="input-container">', unsafe_allow_html=True)
 
