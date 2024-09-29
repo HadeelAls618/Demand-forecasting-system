@@ -15,63 +15,101 @@ st.markdown("""
     /* Apply the custom font */
     html, body, [class*="css"]  {
         font-family: 'Roboto', sans-serif;
-        background-color: #F8F4FF;  /* Set a soft light purple background color */  }
+        background-color: #F8F4FF;  /* Set a soft light purple background color */
+    }
 
-    /* Main title styling for containerized effect */
+    /* Main title styling */
     .main-title-container {
-        font-size: 42px;
+        font-size: 3rem;  /* Use rem units for better responsiveness */
         font-weight: 700;
         color: #4A235A;
         background: #F6F0FB;  /* Purple background for contrast */
-        padding: 10px 30px;
+        padding: 10px 3%;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: auto;
         border: 2px solid #6C3483;
-        margin: 20px auto;  /* Center with margin */
-        text-align: center; }
+        margin: 20px auto;
+        text-align: center;
+    }
 
     /* Adjusted header inside the input container */
     .input-header {
-        font-size: 20px;
+        font-size: 1.8rem;  /* Use rem units for better scaling */
         font-weight: 500;
         color: #4A235A;
         background: #F6F0FB;  /* Purple background for contrast */
-        padding: 10px 30px;
+        padding: 10px 5%;
         border-radius: 15px;
-        position: absolute;
-        top: -50px;  /* Move the header up to overlap */
-        left: 12%;   /* Center align relative to parent */
-        transform: translateX(-50%);  /* Proper centering */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Slight shadow */
-        width: auto;  /* Adjust the width automatically */  }
+        width: auto;  /* Adjust the width automatically */
+        margin-bottom: 10px;
+        text-align: left;  /* Align text to the left */
+    }
+
     /* Customize input labels */
     .stDateInput > label, .stSelectbox > label {
-        font-size: 35px;
+        font-size: 1.5rem;  /* Use rem units */
         font-weight: bold;  /* Make labels bold */
         color: #4A235A;  /* Dark purple */
-        margin-bottom: 10px;  }
+        margin-bottom: 10px;
+        text-align: left;  /* Align labels to the left */
+    }
+
     /* Styling for the input box (Date picker and select box) */
     .stDateInput > div, .stSelectbox > div {
         background-color: #F6F0FB;  /* Light purple background */
         border-radius: 10px;
-        border: 3px solid #C39BD3;  /* Slightly darker purple border */  }
+        border: 3px solid #C39BD3;  /* Slightly darker purple border */
+    }
 
     /* Adjust the height of the input boxes */
     .stDateInput input, .stSelectbox div[data-baseweb="select"] {
-        height: 40px;  /* Increase height for better visibility */  }
+        height: 40px;  /* Increase height for better visibility */
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        .input-header {
+            font-size: 1.5rem;  /* Decrease font size on smaller screens */
+            padding: 8px 5%;  /* Adjust padding to fit narrower screens */
+        }
+        .main-title-container {
+            font-size: 2.5rem;  /* Decrease title size */
+            text-align: left;  /* Align text to the left */
+        }
+        .stDateInput > label, .stSelectbox > label {
+            font-size: 1.2rem;  /* Decrease label size */
+        }
+    }
+
+    /* Media query for very small screens (mobile devices) */
+    @media (max-width: 480px) {
+        .input-header {
+            font-size: 1.2rem;  /* Further decrease font size */
+            padding: 8px 10%;  /* Increase padding for readability */
+        }
+        .main-title-container {
+            font-size: 2rem;  /* Further decrease title size */
+            text-align: left;  /* Align text to the left */
+        }
+        .stDateInput > label, .stSelectbox > label {
+            font-size: 1rem;  /* Decrease label size on mobile */
+        }
+    }
 
     /* Styling for the prediction result */
     .prediction-text {
-        font-size: 28px;
+        font-size: 1.5rem;
         font-weight: 700;
-        color: #E67E22;
-        text-align: center;
+        color: #4A235A;
+        text-align: left;  /* Align prediction result to the left */
         background-color: #F6F0FB;
         padding: 15px;
         border-radius: 15px;
         margin-top: 30px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.1);    }
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
 
     /* Button styling */
     .stButton>button {
@@ -81,13 +119,19 @@ st.markdown("""
         border-radius: 10px;
         padding: 10px 20px;
         font-size: 16px;
-        font-weight: 600;    }
+        font-weight: 600;
+        text-align: left;  /* Align button text to the left */
+    }
+
     /* Button hover effect */
     .stButton>button:hover {
         background-color: #501B70;  /* Darker purple on hover */
-        transition: 0.3s;  }
+        transition: 0.3s;
+    }
     </style>
-    """, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
+
+
 st.markdown('<div class="main-title-container">Weekly Units Forecast📊</div>', unsafe_allow_html=True)
 
 # Center the image using Streamlit's columns
