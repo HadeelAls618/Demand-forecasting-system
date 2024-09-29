@@ -1,9 +1,0 @@
-setup:
-  config:
-    APP_BASE: StreamlitApp
-build:
-  languages:
-    - python
-  packages:
-    - Procfile
-    - requirements.txt
