@@ -139,7 +139,7 @@ st.markdown('<div class="main-title-container">Weekly Units Forecast📊</div>',
 # Center the image using Streamlit's columns
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image('StreamlitApp/Demand_Forecasting2.png', use_column_width=True, width=600)
+    st.image('Deployment/StreamlitApp/Demand_Forecasting2.png', use_column_width=True, width=600)
 
 st.markdown('<div class="input-container">', unsafe_allow_html=True)
 
@@ -170,11 +170,11 @@ predict_button = st.button('Predict Units📈 ')
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Load the trained model
-with open('StreamlitApp/model.pkl', 'rb') as pickle_in:
+with open('Deployment/StreamlitApp/model.pkl', 'rb') as pickle_in:
     model_xgb = pickle.load(pickle_in)
     
 # Load data
-weekly_data = pd.read_pickle('StreamlitApp/data.pkl')
+weekly_data = pd.read_pickle('Deployment/StreamlitApp/data.pkl')
 # Map subcategory name to numerical code
 subcategory_code = subcategory_mapping[subcategory_input]
 # Perform the prediction when the "Predict" button is clicked
