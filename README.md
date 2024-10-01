@@ -17,7 +17,18 @@ This project follows the CRISP-DM (Cross Industry Standard Process for Data Mini
 ## Data Sources
 Three interconnected datasets were used in this project, providing a comprehensive view of sales, product characteristics, and store-level attributes:
 
-**Product Data**: Product-specific information (UPC, description, manufacturer, category, size).
-**Sales Data**: Weekly sales figures at the store level, promotions, discounts, units sold, and pricing.
-**Store Data**: Store-level attributes including location, size, and market segmentation.
+* **Product Data**: Product-specific information (UPC, description, manufacturer, category, size).
+* **Sales Data**: Weekly sales figures at the store level, promotions, discounts, units sold, and pricing.
+* **Store Data**: Store-level attributes including location, size, and market segmentation.
 **The datasets were integrated using SQL in BigQuery, enabling a unified view for analysis and modeling**
+
+## Key Features and Techniques
+**Data Analysis & SQL Integration:**
+* Integrated BigQuery as the primary data storage solution within Google Colab, enabling the use of both SQL and Python for efficient data processing and analysis.
+* Leveraged the combined power of SQL queries and Python libraries for Exploratory Data Analysis (EDA), allowing for seamless integration and comprehensive insights.
+* Time-series feature engineering (lags, moving averages) to capture seasonality and trends.
+**Modeling & Evaluation:**
+* Implemented XGBoost for time-series demand forecasting, given its robustness for structured data.
+* Evaluated model performance using (RMSLE) which good for inventory forecasting where relative error matters more than absolute differences.
+**Deployment:**
+* Developed an interactive web application using Streamlit for real-time demand forecasting, which  allows stakeholders to view predicted demand for each category
