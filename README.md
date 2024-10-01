@@ -37,5 +37,5 @@ Planned enhancements include implementing real-time demand tracking using Airflo
 
   ## Contact
 If you have any questions or would like to discuss this project further, feel free to reach out!
-* [LinkedIn](https://www.linkedin.com/in/hadeel-als-0a23702a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ) :
-* Email: alsadonhadeel@gmail.com
+* [LinkedIn](https://www.linkedin.com/in/hadeel-als-0a23702a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ) 
+* [Email](alsadonhadeel@gmail.com) 
