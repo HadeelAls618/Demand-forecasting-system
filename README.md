@@ -21,7 +21,7 @@ Conducted Exploratory Data Analysis (EDA) using both SQL and Python. Applied tim
 Built a robust time-series demand forecasting model using XGBoost, selected for its efficiency in handling structured data. The model was evaluated using Root Mean Squared Logarithmic Error (RMSLE), a metric particularly suitable for inventory forecasting where relative error matters more than absolute differences.
 
 * **Deployment:**
-Developed an interactive web application using Streamlit, enabling stakeholders to view predicted demand for each product category in real-time. This deployment completes the full cycle of our project. you can check the app [here]([https://medium.com/tech-tales-business-trails/how-machine-learning-transformed-a-retail-chain-part-1-uncovering-insights-b3df8d236052](https://demand-forecasting-system-c3m3c2cxxz6z6fnatgasmv.streamlit.app/))
+Developed an interactive web application using Streamlit, enabling stakeholders to view predicted demand for each product category in real-time. This deployment completes the full cycle of our project. you can check the app [here](https://demand-forecasting-system-c3m3c2cxxz6z6fnatgasmv.streamlit.app/)
 
 ## Data Sources
 Three interconnected datasets were used in this project, providing a comprehensive view of sales, product characteristics, and store-level attributes:
