@@ -27,8 +27,10 @@ Three interconnected datasets were used in this project, providing a comprehensi
 * Integrated BigQuery as the primary data storage solution within Google Colab, enabling the use of both SQL and Python for efficient data processing and analysis.
 * Leveraged the combined power of SQL queries and Python libraries for Exploratory Data Analysis (EDA), allowing for seamless integration and comprehensive insights.
 * Time-series feature engineering (lags, moving averages) to capture seasonality and trends.
+  
 **Modeling & Evaluation:**
 * Implemented XGBoost for time-series demand forecasting, given its robustness for structured data.
 * Evaluated model performance using (RMSLE) which good for inventory forecasting where relative error matters more than absolute differences.
+  
 **Deployment:**
 * Developed an interactive web application using Streamlit for real-time demand forecasting, which  allows stakeholders to view predicted demand for each category
