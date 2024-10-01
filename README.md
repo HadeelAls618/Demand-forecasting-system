@@ -1,6 +1,6 @@
 # Demand Forecasting System for FMCG Retailer
 ## Overview
-This project showcases an end-to-end demand forecasting solution built to address the inventory management challenges faced by a large offline retailer selling Fast Moving Consumer Goods (FMCGs). Leveraging advanced machine learning techniques (XGBoost) and historical sales data, this system accurately predicts future demand for each product category, ensuring optimal inventory levels and reducing the risk of overstocking and understocking. This project serves as a demonstration of proficiency in Python, SQL, and handling large datasets
+This project showcases an end-to-end demand forecasting solution built to address the inventory management challenges faced by a large offline retailer selling Fast Moving Consumer Goods (FMCGs). Leveraging advanced machine learning techniques (XGBoost) and historical sales data, this system accurately predicts future demand for each product category, ensuring optimal inventory levels and reducing the risk of overstocking and understocking. This project serves as a demonstration of expertise in data manipulation, machine learning, and web deployment.
 
 ## Problem Statement
 The retailer has been experiencing significant business losses due to inefficient inventory management, resulting in both overstocking and understocking of products. The key objective is to optimize inventory by predicting weekly demand for different product categories, enabling better alignment of supply with actual demand. This, in turn, will reduce storage costs, prevent lost sales, and improve overall profitability.
@@ -34,3 +34,12 @@ Three interconnected datasets were used in this project, providing a comprehensi
   
 **Deployment:**
 * Developed an interactive web application using Streamlit for real-time demand forecasting, which  allows stakeholders to view predicted demand for each category
+
+## Future Directions
+* Implement a real-time demand tracking system using Airflow and BigQuery.
+* Explore deep learning techniques like LSTMs for capturing long-term dependencies.
+  
+  ## Contact
+If you have any questions or would like to discuss this project further, feel free to reach out!
+* LinkedIn:
+* Email:
