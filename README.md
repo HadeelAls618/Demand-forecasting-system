@@ -1,6 +1,7 @@
 # Demand Forecasting System for FMCG Retailer
 ## Overview
 This project showcases an end-to-end demand forecasting solution built to address the inventory management challenges faced by a large offline retailer selling Fast Moving Consumer Goods (FMCGs). Leveraging advanced machine learning techniques (XGBoost) and historical sales data, this system accurately predicts future demand for each product category, ensuring optimal inventory levels and reducing the risk of overstocking and understocking. This project serves as a demonstration of expertise in data manipulation, machine learning, and web deployment.
+To experience the project in the form of an engaging story, visit our Medium publication [here](https://medium.com/tech-tales-business-trails/the-retail-crystal-ball-building-a-forecasting-system-to-see-the-future-of-sales-f533272995ac)
 
 
 ## Problem Statement
